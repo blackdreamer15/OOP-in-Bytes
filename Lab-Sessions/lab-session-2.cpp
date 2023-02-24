@@ -33,7 +33,7 @@ float bmiCalc(float height, float weight) {
         cout << "\nYour have a obese." << endl;
     }
     else {
-        cout << "Your are morbidly obese." << endl;
+        cout << "\nYour are morbidly obese." << endl;
     }
     return bmi;
 }
