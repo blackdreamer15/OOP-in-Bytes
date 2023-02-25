@@ -57,7 +57,7 @@ void convertHeight_CmToFeet_Run() {
 
     height_ft = convertHeight_CmToFeet(height_cm);
 
-    std::cout << "Your height is: " << height_ft << "feet and " << height_ft - (int)height_ft << "inches.";
+    std::cout << "Your height is: " << (int)height_ft << "feet and " << height_ft - (int)height_ft << "inches.";
 }
 
 void fibonacciSequence_Run() {
