@@ -33,7 +33,7 @@ public:
         std::cout << "Channel Name: " << getChannelName() << std::endl;
         std::cout << "Owner Name: " << getOwnerName() << std::endl;
         std::cout << "Number of Subscribers: " << getSubscriberCount() << std::endl;
-        std::cout << "List of Published Videos: \n";
+        std::cout << "Complete List of Published Videos: \n";
         for(auto VideoTitle : PublishedVideoTitles) {
             std::cout << VideoTitle << "\n";
         }
