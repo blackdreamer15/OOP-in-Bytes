@@ -1,6 +1,4 @@
 /*
-Write a temperature-conversion program that gives the user the option of converting Fahrenheit to Celsius or Celsius to Fahrenheit. Then carry out the conversion. 
-
 Create the equivalent of a four-function calculator. 
 -- The program should ask the user to enter a number, an operator, and another number. 
 -- It should then carry out the specified arithmetical operation: adding, subtracting, multiplying, or 
@@ -12,38 +10,7 @@ dividing the two numbers.
 
 #include <iostream>
 
-inline float convertCelsiusToFahrenheit(float celsius) {
-    return (celsius * 9 / 5) + 32;
-}
-
-inline float convertFahrenheitToCelsius(float fahrenheit) {
-    return (fahrenheit - 32) * 5 / 9;
-}
-
 int main()  {
-    // Program to convert from Celsius to Fahrenheit and vice-versa
-    float celsius, fahrenheit;
-    int choice;
-
-    std::cout << "\tConversion Menu\n1. Celsius to Fahrenheit\n2. Fahrenheit to Celsius\n\nEnter an option: ";
-    switch(choice) {
-        case 1:
-            std::cout << "Enter a temperature in Celsius: ";    std::cin >> celsius;
-            std::cout << celsius << " degrees Celsius is " << convertCelsiusToFahrenheit(celsius) << " degrees Fahrenheit." << std::endl;
-            break;
-        case 2:
-            std::cout << "Enter a temperature in Fahrenheit: ";     std::cin >> fahrenheit;
-            std::cout << fahrenheit << " degrees Fahrenheit is " << convertFahrenheitToCelsius(fahrenheit) << " degrees Celsius." << std::endl;
-            break;
-        default:
-            std::cout << "Invalid option." << std::endl;
-            break;
-    }
-
-
-    std::cout << "\n===================================\n" << std::endl;
-
-    // Program to create a four-function calculator
     float num1, num2;
     int operation;
     char option;
