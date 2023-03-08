@@ -1,6 +1,4 @@
 #include <iostream>
-using namespace std;
-
 
 class CPolygon {
 protected:
@@ -28,8 +26,6 @@ public:
 };
 
 
-
-
 int main() {
     CRectangle rect;
     CTriangle trgl;
@@ -43,8 +39,8 @@ int main() {
     ppoly2->set_values(10, 5);
     ppoly3->set_values(10, 5);
 
-    cout << "Area of Rectangle: " << ppoly1->area() << endl;
-    cout << "Area of Triangle: " << ppoly2->area() << endl;
-    cout << "Area of Polygon: " << ppoly3->area() << endl;
+    std::cout << "Area of Rectangle: " << ppoly1->area() << std::endl;
+    std::cout << "Area of Triangle: " << ppoly2->area() << std::endl;
+    std::cout << "Area of Polygon: " << ppoly3->area() << std::endl;
     return 0;
 }
